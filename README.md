@@ -17,18 +17,20 @@ Since I program a lot in Haskell, `run` is a command that lets me not type `stac
 
 It is run by executing the command `run foo.bar` or `run all`.
 
-### Create-Alias
+### Ali
 
 This is a command that allows me to create permenant aliases within my shell configuration files. It is set to work with `zsh` so if you're running using another shell, you will have to make the appropiate adjustments. 
 
-It is run by executing the command `create-alias x y`. This takes the first argument `x` and uses it as the alias for the second argument, the command `y`. `y` doesn't have to be exactly a single command. It can be one or many arguments. For example the two uses of the function are both valid.
+To create an alias, you use the flag `-m` then enter the alias name then what the command of the alias.
+To delete an alias, you use the flag `-d` then enter the alias name.
 
 ```
-> create-alias a pwd
-> a
-/usr/local/bin
-
-> create-alias a echo "Hello World"
-> a
-Hello World
+> ali -m p pwd
+> p
+/Users/edward
+> ali -d p pwd
+> p
+zsh: command not found: p
 ```
+
+
