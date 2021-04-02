@@ -2,7 +2,7 @@
 
 # https://srvfail.com/how-to-provide-ssh-password-inside-a-script-or-oneliner/
 
-spawn ssh csstudent075@csicluster.ucd.ie 
+spawn ssh #username
 expect "password:"
-send "6qbX5W9DDS\r"
+send "\r" # password
 interact
